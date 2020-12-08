@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="go_top"><i class="xi-arrow-up"></i></div>
+
     <!-- 헤더 시작 -->
     <header>
       <!-- 네브 -->
@@ -264,6 +266,7 @@
 
         // 헤더-네브
         var nav = $(".header_nav");
+        var goTop = $(".go_top");
 
         $(window).scroll(function () {
           var scrollTopValue = $(document).scrollTop();
@@ -273,6 +276,16 @@
           } else {
             nav.removeClass("active");
           }
+
+          if (scrollTopValue > 900) {
+            goTop.fadeIn();
+          } else {
+            goTop.fadeOut();
+          }
+        });
+
+        goTop.click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
         });
       });
     </script>
