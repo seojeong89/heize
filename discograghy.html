@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discograghy</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/discograghy.css" />
+    <script src="./js/common.js"></script>
+  </head>
+
+  <body>
+    <div class="go_top"><i class="xi-arrow-up"></i></div>
+
+    <!-- 헤더 -->
+    <header>
+      <!-- 네브 -->
+      <div class="header_nav flex">
+        <div class="container flex">
+          <a class="logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+          <ul class="nav flex">
+            <li><a href="./profile.html">PROFILE</a></li>
+            <li><a href="./discograghy.html">DISCOGRAPHY</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">VIDEOS</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 네브 끝 -->
+      <div class="header_text">
+        <div class="container">
+          <h1>DISCOGRAPHY</h1>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="album_btns">
+          <button data-filter="*" class="album_btn on">All</button>
+          <button data-filter=".mini" class="album_btn">Mini</button>
+          <button data-filter=".single" class="album_btn">Single</button>
+          <button data-filter=".regular" class="album_btn">Regular</button>
+          <button data-filter=".ost" class="album_btn">OST</button>
+        </div>
+
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <a class="grid-item mini" href="./images/mini_album_01.jpg" title="HEIZE">
+            <img src="./images/mini_album_01.jpg" alt="img" />
+          </a>
+
+          <!-- <div id="test-modal" class="popup">
+            <img src="./images/mini_album_01.jpg" alt="img" />
+
+            <table>
+              <thead>
+                <tr id="row01">
+                  <td colspan="4">We don't talk together</td>
+                </tr>
+                <tr id="row02">
+                  <td colspan="4">2019. 07. 07</td>
+                </tr>
+                <thead>
+                  <tr id="row03">
+                    <th>트랙</th>
+                    <th>곡명</th>
+                    <th>작사</th>
+                    <th>작곡</th>
+                  </tr>
+                </thead>
+              </thead>
+
+              <tbody id="row04">
+                <tr>
+                  <td>1</td>
+                  <td>We don't talk together (Feat. 기리보이) (Prod. SUGA)</td>
+                  <td>헤이즈 (Heize), 슈가, 기리보이</td>
+                  <td>슈가, 헤이즈 (Heize), EL CAPITXN</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    We don't talk together (Feat. 기리보이) (Prod. SUGA) We don't talk together
+                    (Inst.) (CD Only)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+
+          <a class="grid-item mini" href="./images/mini_album_02.jpg" title="And July">
+            <img src="./images/mini_album_02.jpg" alt="img" />
+          </a>
+          <a class="grid-item mini" href="./images/mini_album_03.jpg" title="/// (너 먹구름 비)">
+            <img src="./images/mini_album_03.jpg" alt="img" />
+          </a>
+          <a class="grid-item mini" href="./images/mini_album_04.jpg" title="바람">
+            <img src="./images/mini_album_04.jpg" alt="img" />
+          </a>
+          <a class="grid-item mini" href="./images/mini_album_05.jpg" title="만추">
+            <img src="./images/mini_album_05.jpg" alt="img" />
+          </a>
+          <a class="grid-item mini" href="./images/mini_album_06.jpg" title="Lyricist">
+            <img src="./images/mini_album_06.jpg" alt="img" />
+          </a>
+          <a class="grid-item regular" href="./images/regular_album.jpg" title="She's Fine">
+            <img src="./images/regular_album.jpg" alt="img" />
+          </a>
+          <a
+            class="grid-item single"
+            href="./images/single_album_01.jpg"
+            title="조금만 더 방황하고"
+          >
+            <img src="./images/single_album_01.jpg" alt="img" />
+          </a>
+          <a
+            class="grid-item single"
+            href="./images/single_album_02.jpg"
+            title="내 남자친구가 고맙대"
+          >
+            <img src="./images/single_album_02.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item single" href="./images/single_album_03.jpg" title="Pume Sweet Pume">
+            <img src="./images/single_album_03.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item single" href="./images/single_album_04.jpg" title="돌아오지마">
+            <img src="./images/single_album_04.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item single" href="./images/single_album_05.jpg" title="저 별">
+            <img src="./images/single_album_05.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item single" href="./images/single_album_06.jpg" title="첫눈에">
+            <img src="./images/single_album_06.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item single" href="./images/single_album_07.jpg" title="오롯이">
+            <img src="./images/single_album_07.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item single"
+            href="./images/single_album_08.jpg"
+            title="We don't talk together"
+          >
+            <img src="./images/single_album_08.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item ost" href="./images/ost_album_01.jpg" title="질투의 화신 OST Part. 1">
+            <img src="./images/ost_album_01.jpg" alt="img" />
+          </a>
+
+          <a class="grid-item ost" href="./images/ost_album_02.jpg" title="도깨비 OST Part. 14">
+            <img src="./images/ost_album_02.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item ost"
+            href="./images/ost_album_03.jpg"
+            title="슬기로운 감빵생활 OST Part. 5"
+          >
+            <img src="./images/ost_album_03.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item ost"
+            href="./images/ost_album_04.jpg"
+            title="
+          호텔 델루나 OST Part. 5"
+          >
+            <img src="./images/ost_album_04.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item ost"
+            href="./images/ost_album_05.jpg"
+            title="질동백꽃 필 무렵 OST Part. 9"
+          >
+            <img src="./images/ost_album_05.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item ost"
+            href="./images/ost_album_06.jpg"
+            title="낭만닥터 김사부 2 OST Part. 4"
+          >
+            <img src="./images/ost_album_06.jpg" alt="img" />
+          </a>
+
+          <a
+            class="grid-item ost"
+            href="./images/ost_album_07.jpg"
+            title="사이코지만 괜찮아 OST Part. 1"
+          >
+            <img src="./images/ost_album_07.jpg" alt="img" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+      <div class="footer_logo">
+        <img src="./images/logo.png" alt="로고" />
+      </div>
+      <div class="footer_link flex">
+        <a href="#">
+          <i class="xi-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="xi-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="xi-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="xi-youtube-play"></i>
+        </a>
+        <a href="#" class="box">
+          <img src="./images/daum_logo_02.png" alt="로고" />
+        </a>
+        <a href="#" class="box">
+          <img src="./images/vlive_logo.png" alt="로고" />
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      // magnific-Popup
+      // $(".grid-item").magnificPopup({
+      //   type: "inline",
+      //   preloader: false,
+      //   focus: "#username",
+      //   modal: true,
+      // });
+
+      // $(document).on("click", ".popup", function (e) {
+      //   e.preventDefault();
+      //   $.magnificPopup.close();
+      // });
+
+      // magnific-Popup
+      $(".grid-item").magnificPopup({
+        type: "image",
+        closeOnContentClick: true,
+        image: {
+          verticalFit: false,
+        },
+      });
+
+      // init Isotope
+      var $grid = $(".grid").isotope({
+        itemSelector: ".grid-item",
+        percentPosition: true,
+        masonry: {
+          columnWidth: ".grid-sizer",
+        },
+      });
+
+      // layout Isotope after each image loads
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope("layout");
+      });
+
+      // 필터링
+      $(".album_btns").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+
+        var btns = $(".album_btns").find("button");
+        btns.removeClass("on");
+        $(this).addClass("on");
+      });
+    </script>
+  </body>
+</html>

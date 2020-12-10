@@ -20,6 +20,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <script src="./js/jquery.magnific-popup.min.js"></script>
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
@@ -37,7 +39,7 @@
           <a class="logo" href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
           <ul class="nav flex">
             <li><a href="./profile.html">PROFILE</a></li>
-            <li><a href="#">DISCOGRAPHY</a></li>
+            <li><a href="./discograghy.html">DISCOGRAPHY</a></li>
             <li><a href="#">GALLERY</a></li>
             <li><a href="#">VIDEOS</a></li>
           </ul>
@@ -96,15 +98,51 @@
       <!-- 섹션02-앨범 -->
       <div class="section section_02">
         <div class="container">
-          <a class="view" href="#">전체보기 <i class="xi-angle-right"></i></a>
+          <a class="view" href="./discograghy.html">전체보기 <i class="xi-angle-right"></i></a>
           <h3>DISCOGRAPHY</h3>
           <div class="album_slide">
-            <div><img src="./images/album_01.jpg" alt="앨범" /></div>
-            <div><img src="./images/album_02.jpg" alt="앨범" /></div>
-            <div><img src="./images/album_03.jpg" alt="앨범" /></div>
-            <div><img src="./images/album_04.jpg" alt="앨범" /></div>
-            <div><img src="./images/album_05.jpg" alt="앨범" /></div>
-            <div><img src="./images/album_06.jpg" alt="앨범" /></div>
+            <a class="album_s" href="./images/mini_album_01.jpg"
+              ><img src="./images/mini_album_01.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/mini_album_02.jpg"
+              ><img src="./images/mini_album_02.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/mini_album_03.jpg"
+              ><img src="./images/mini_album_03.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/mini_album_04.jpg"
+              ><img src="./images/mini_album_04.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/mini_album_05.jpg"
+              ><img src="./images/mini_album_05.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/mini_album_06.jpg"
+              ><img src="./images/mini_album_06.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_01.jpg"
+              ><img src="./images/single_album_01.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_02.jpg"
+              ><img src="./images/single_album_02.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_03.jpg"
+              ><img src="./images/single_album_03.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_04.jpg"
+              ><img src="./images/single_album_04.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_05.jpg"
+              ><img src="./images/single_album_05.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_06.jpg"
+              ><img src="./images/single_album_06.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_07.jpg"
+              ><img src="./images/single_album_07.jpg" alt="앨범"
+            /></a>
+            <a class="album_s" href="./images/single_album_08.jpg"
+              ><img src="./images/single_album_08.jpg" alt="앨범"
+            /></a>
           </div>
         </div>
       </div>
@@ -114,14 +152,14 @@
         <div class="container">
           <a class="view" href="#">전체보기 <i class="xi-angle-right"></i></a>
           <h3>GALLERY</h3>
-          <ul class="cards">
-            <li class="card_01"></li>
-            <li class="card_02"></li>
-            <li class="card_03"></li>
-            <li class="card_04"></li>
-            <li class="card_05"></li>
-            <li class="card_06"></li>
-          </ul>
+          <div class="cards">
+            <a href="./images/photo_02_b.jpg" class="card_01"></a>
+            <a href="./images/photo_03_b.jpg" class="card_02"></a>
+            <a href="./images/photo_05_b.jpg" class="card_03"></a>
+            <a href="./images/photo_04_b.jpg" class="card_04"></a>
+            <a href="./images/photo_06_b.jpg" class="card_05"></a>
+            <a href="./images/photo_07_b.jpg" class="card_06"></a>
+          </div>
         </div>
       </div>
 
@@ -248,6 +286,63 @@
           arrows: true,
           prevArrow: '<button class="slick-prev"> < </button>',
           nextArrow: '<button class="slick-next"> > </button>',
+        });
+
+        $(".album_s").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        // 섹션04-갤러리
+        $(".card_01").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".card_02").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".card_03").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".card_04").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".card_05").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".card_06").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
         });
 
         // 섹션04-비디오
