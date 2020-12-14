@@ -1,6 +1,6 @@
 /* ===== 헤더 ===== */
 header {
-  background: url(../images/bg_02.jpg) no-repeat top / cover;
+  background: url(../images/header_bg_01.jpg) no-repeat center/ cover;
   height: 780px;
   position: relative;
 }
@@ -46,30 +46,18 @@ header {
   color: var(--gray_dark);
 }
 
-/* ===== 섹션 / 라인 ===== */
-
+/* ===== 섹션 ===== */
 section {
-  position: relative;
   margin-bottom: 100px;
 }
 
-section .line {
-  position: absolute;
-  /* top: 300px; */
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1320px;
-  border-left: 1px solid var(--gray_light);
-}
-
-/* ===== 섹션 / 박스 전체 ===== */
 section .box {
   width: 1200px;
-  margin: 0 auto;
+  /* max-width: 90%; */
+  margin: 60px auto 0;
   font-size: 16px;
   line-height: 36px;
-  justify-content: center;
+  align-items: initial;
 }
 
 section .box span {
@@ -77,41 +65,21 @@ section .box span {
   font-weight: 700;
 }
 
-/* ===== 섹션 / 박스-01 ===== */
-
-.box_01 {
-  padding-top: 60px;
+section .line {
+  height: 900px;
+  border-left: 1px solid var(--gray_light);
+  margin: 450px 30px 0;
 }
 
-.box_01 .photo {
-  width: 500px;
-  margin-left: 50px;
-  margin-right: auto;
-}
-
-.box_01 .text {
-  width: 500px;
-  margin-right: 56px;
-}
-
-/* ===== 섹션 / 박스-02 ===== */
-.box_02 {
-  align-items: initial;
-}
-
-.box_02 .text {
+.text {
   margin-top: 50px;
 }
 
-.box_02 p {
-  margin-top: 20px;
+.box_01,
+.box_02 {
+  width: 570px;
 }
 
-.textarea_01 {
-  width: 567px;
-  margin-right: auto;
-}
-
-.textarea_02 {
-  width: 567px;
+.textarea_02 .text:nth-child(2) {
+  margin-top: 90px;
 }

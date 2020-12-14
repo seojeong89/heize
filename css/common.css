@@ -74,6 +74,12 @@ h3 {
   display: block;
   line-height: 80px;
   margin-left: 50px;
+  transition: all 0.3s;
+}
+
+.nav a:hover {
+  color: #d55a5b;
+  font-weight: 800;
 }
 
 /* ===== 푸터 ===== */

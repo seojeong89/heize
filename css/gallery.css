@@ -1,0 +1,21 @@
+/* ===== 헤더 ===== */
+header {
+  background: url(../images/header_bg_03.jpg) no-repeat top / cover;
+  height: 780px;
+  position: relative;
+}
+
+.header_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_text h1 {
+  position: absolute;
+  bottom: -12px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 800;
+}

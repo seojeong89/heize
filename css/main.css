@@ -22,6 +22,10 @@ header {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.header_nav .container {
+  padding: initial;
+}
+
 .header_text .container {
   padding-top: initial;
 }
@@ -71,6 +75,11 @@ section .container {
   top: 100px;
   right: 0;
   display: flex;
+  transition: color 0.2s;
+}
+
+.section .view:hover {
+  color: #d55a5b;
 }
 
 .section i {
@@ -113,6 +122,11 @@ section .container {
 
 .section_02 .slick-slide {
   outline: none;
+  transition: opacity 0.3s;
+}
+
+.section_02 .slick-slide:hover {
+  opacity: 0.6;
 }
 
 .section_02 .slick-arrow {
@@ -125,6 +139,11 @@ section .container {
   font-size: 36px;
   z-index: 300;
   outline: none;
+  transition: color 0.2s;
+}
+
+.section_02 .slick-arrow:hover {
+  color: #d55a5b;
 }
 
 .section_02 .slick-prev:before,
@@ -142,6 +161,14 @@ section .container {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
+}
+
+.cards a {
+  transition: opacity 0.3s;
+}
+
+.cards a:hover {
+  opacity: 0.6;
 }
 
 .card_01 {
