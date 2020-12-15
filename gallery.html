@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>GALLERY</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <script src="./js/jquery.magnific-popup.min.js"></script>
 
     <link rel="shortcut icon" href="./h-logo.png" type="image/x-icon" />
     <link rel="icon" href="./h-logo.png" type="image/x-icon" />
@@ -42,7 +45,63 @@
     </header>
 
     <!-- 섹션 -->
-    <section></section>
+    <section>
+      <div class="container">
+        <div class="gallery">
+          <a class="image w_1 h_2" href="./images/photo_15.jpg">
+            <img src="./images/photo_15.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_04.jpg">
+            <img src="./images/photo_04.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_14.jpg">
+            <img src="./images/photo_14.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_2" href="./images/photo_03.jpg">
+            <img src="./images/photo_03.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_11.jpg">
+            <img src="./images/photo_11.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_10.jpg">
+            <img src="./images/photo_10.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_2 h_1" href="./images/photo_05.jpg">
+            <img src="./images/photo_05.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_2 h_2" href="./images/photo_12.jpg">
+            <img src="./images/photo_12.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_09.jpg">
+            <img src="./images/photo_09.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_2" href="./images/photo_02.jpg">
+            <img src="./images/photo_02.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_13.jpg">
+            <img src="./images/photo_13.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_06.jpg">
+            <img src="./images/photo_06.jpg" alt="photo" />
+          </a>
+
+          <a class="image w_1 h_1" href="./images/photo_07.jpg">
+            <img src="./images/photo_07.jpg" alt="photo" />
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- 푸터 -->
     <footer>
@@ -70,5 +129,13 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        closeOnContentClick: true,
+      });
+    </script>
   </body>
 </html>
