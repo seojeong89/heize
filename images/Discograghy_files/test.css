@@ -65,8 +65,6 @@ section {
   margin: 0 auto;
 }
 
-/* ===== 팝업 - table ===== */
-
 .white-popup {
   position: relative;
   background: #fff;
@@ -78,23 +76,40 @@ section {
   text-align: center;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+td.textOverDefault {
+  white-space: normal;
+  text-overflow: clip;
+}
+
 .white-popup img {
   width: 600px;
   height: 600px;
   margin: 0 auto;
 }
 
-td {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100px;
-  border: 1px solid #ddd;
+#row01,
+#row02,
+#row03,
+#row04 {
+  line-height: 30px;
 }
 
-th,
 td {
-  padding: 6px;
+  border: 1px solid #ddd;
 }
 
 #row01,
@@ -112,26 +127,26 @@ td {
   border-left: 1px solid #fff;
 }
 
-#row03 th:nth-child(1) {
+/* #row03 th:nth-child(1) {
   width: 30px;
   border-left: none;
 }
 
 #row03 th:nth-child(2) {
-  width: 270px;
+  width: 300px;
 }
 
 #row03 th:nth-child(3) {
-  width: 150px;
+  width: 130px;
 }
 
 #row03 th:nth-child(4) {
-  width: 150px;
-}
+  width: 140px;
+} */
 
-/* 팝업 - 닫기버튼 */
 .white-popup .mfp-close {
-  font-size: 80px;
-  right: -50px;
-  color: #fff;
+  font-size: 100px;
+  padding: initial;
+  right: 20px;
+  top: 10px;
 }
